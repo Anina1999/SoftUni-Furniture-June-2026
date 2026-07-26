@@ -12,7 +12,7 @@
  - [x] Add node_modules to .gitignore 
 
 ## Setup REST API
- - [ ] Initialize project
+ - [x] Initialize project
  - [ ] Add express
  - [ ] Add gitignore
  - [ ] Add base furniture controller
