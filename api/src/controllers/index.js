@@ -1,0 +1,1 @@
+export * as furnitureController from './furnitureController.js';
