@@ -6,10 +6,10 @@
  - [x] Add client resources
 
 ## Setup client dev env
- - [ ] Install packages `npm i`
- - [ ] Install vite `npm i -D vite`
- - [ ] Add dev script  
- - [ ] Add node_modules to .gitignore 
+ - [x] Install packages `npm i`
+ - [x] Install vite `npm i -D vite`
+ - [x] Add dev script  
+ - [x] Add node_modules to .gitignore 
 
 ## Setup REST API
  - [ ] Initialize project
