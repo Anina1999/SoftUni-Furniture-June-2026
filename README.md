@@ -17,7 +17,7 @@
  - [x] Add gitignore
  - [x] Add base furniture controller
  - [x] Add routes
- - [ ] Add CORS
+ - [x] Add CORS
 
 ## Authentication and Authorization
  - [ ] Create user controller with register endpoint
