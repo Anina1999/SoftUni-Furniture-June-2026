@@ -20,8 +20,8 @@
  - [x] Add CORS
 
 ## Authentication and Authorization
- - [ ] Create user controller with register endpoint
- - [ ] Add json parser
+ - [x] Create user controller with register endpoint
+ - [x] Add json parser
  - [ ] Setup prisma orm database `https://www.prisma.io/docs/prisma-orm/quickstart/prisma-postgres`
  - [ ] Change node with tsx
  - [ ] Add user model
