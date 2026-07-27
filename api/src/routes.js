@@ -8,5 +8,6 @@ const routes = Router();
 
 routes.get('/data/catalog', furnitureController.getAll);
 routes.post('/users/register', userController.register);
+routes.get('/users/logout', userController.logout);
 
 export default routes;

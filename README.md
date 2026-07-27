@@ -28,7 +28,7 @@
  - [x] Add validation
  - [x] Hash password with zod transform and bcrypt
  - [x] Generate token 
- - [ ] Add logout
+ - [x] Add logout
  - [ ] Add login to user controller
  - [ ] Add auth middleware
  - [ ] Add isAuth middleware

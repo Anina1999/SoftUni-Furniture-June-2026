@@ -17,3 +17,7 @@ export async function register(req, res) {
         return res.status(400).json({ err: error.errors})
     }
 }
+
+export async function logout(req, res) {
+    res.json({ message: 'Logout successful' });
+}
