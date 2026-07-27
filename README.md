@@ -22,9 +22,9 @@
 ## Authentication and Authorization
  - [x] Create user controller with register endpoint
  - [x] Add json parser
- - [ ] Setup prisma orm database `https://www.prisma.io/docs/prisma-orm/quickstart/prisma-postgres`
+ - [x] Setup prisma orm database `https://www.prisma.io/docs/prisma-orm/quickstart/prisma-postgres`
  - [ ] Change node with tsx
- - [ ] Add user model
+ - [x] Add user model
  - [ ] Add validation
  - [ ] Hash password with zod transform and bcrypt
  - [ ] Generate token 
