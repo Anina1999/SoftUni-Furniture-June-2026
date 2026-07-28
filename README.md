@@ -40,7 +40,7 @@
  - [x] Add error util for messages
  - [x] Add Furniture model
  - [x] Add furniture service with create method
- - [ ] List all furnitures
+ - [x] List all furnitures
  - [ ] Map id to _id
  - [ ] Furniture details
 
