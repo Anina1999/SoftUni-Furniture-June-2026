@@ -48,8 +48,8 @@
  - [x] Setup one to many relation
  - [x] Add owner on furniture create
  - [x] Delete furniture
- - [ ] Edit furniture
- - [ ] My furnitures
+ - [x] Edit furniture
+ - [x] My furnitures
 
 ## Bonus
  - [ ] Invalidate user session

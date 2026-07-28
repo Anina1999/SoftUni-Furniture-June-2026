@@ -1,9 +1,18 @@
 import { createFurnitureSchema } from "../schemas/furnitureSchema.js";
 import { furnitureService } from "../services";
 import { getErrorMessage } from "../utils/errorUtils.js";
+import querystring from 'querystring';
 
 export async function getAll(req, res) {
-    const furniture = await furnitureService.getAll();  
+    let filter = {};
+
+    if (req.query.where) {
+        const result = querystring.parse(req.query.where.replaceAll('"', ''));
+
+        filter.userId = result._ownerId;
+    }
+
+    const furniture = await furnitureService.getAll(filter);  
     res.json(furniture);
 }
 
@@ -49,5 +58,18 @@ export async function remove(req, res) {
         res.json({ message: 'Furniture deleted' });
     } catch (err) {
         res.status(500).json({ message: 'Error deleting furniture' });
+    }
+}
+
+export async function update(req, res) {
+    const { furnitureId } = req.params;
+    const userId = req.user.id;
+
+    try {
+        const furnitureData = createFurnitureSchema.parse(req.body);
+        const updatedFurniture = await furnitureService.update(furnitureId, userId, req.body);
+        res.json({ message: 'Furniture updated', furniture: updatedFurniture });
+    } catch (err) {
+        res.status(500).json({ message: getErrorMessage(err) });
     }
 }
