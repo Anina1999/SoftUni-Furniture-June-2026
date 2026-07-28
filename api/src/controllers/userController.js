@@ -2,6 +2,7 @@ import { error } from "node:console";
 import { userSchema } from "../schemas/userSchema.js";
 import { userService } from "../services/index.js";
 import { generateAuthToken } from "../utils/tokenUtils.js";
+import { getErrorMessage } from "../utils/errorUtils.js";
 
 export async function register(req, res) {
     try {
@@ -15,7 +16,7 @@ export async function register(req, res) {
             accessToken: token,
         });
     } catch (err) {
-        return res.status(400).json({ err: error.errors})
+        return res.status(400).json({ err: getErrorMessage(err)})
     }
 }
 
@@ -32,7 +33,7 @@ export async function login(req, res) {
             accessToken: token,
         });
     } catch (err) {
-        return res.status(400).json({ err: error.message });
+        return res.status(400).json({ err: getErrorMessage(err) });
     }
 }
 

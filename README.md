@@ -34,12 +34,12 @@
  - [ ] Add isAuth middleware
 
 ## Furniture Endpoints
- - [ ] Create furniture endpoint
- - [ ] Add create furniture schema
- - [ ] Validate input
- - [ ] Add error util for messages
- - [ ] Add Furniture model
- - [ ] Add furniture service with create method
+ - [x] Create furniture endpoint
+ - [x] Add create furniture schema
+ - [x] Validate input
+ - [x] Add error util for messages
+ - [x] Add Furniture model
+ - [x] Add furniture service with create method
  - [ ] List all furnitures
  - [ ] Map id to _id
  - [ ] Furniture details
