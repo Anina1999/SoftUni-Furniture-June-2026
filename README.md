@@ -52,4 +52,4 @@
  - [x] My furnitures
 
 ## Bonus
- - [ ] Invalidate user session
+ - [x] Invalidate user session
