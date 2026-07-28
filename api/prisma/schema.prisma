@@ -19,11 +19,13 @@ model User {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
+  furnitures Furniture[]
+
   @@map("users")
 }
 
 model Furniture {
-  id          String   @id @default(cuid())
+  id          String  @id @default(cuid())
   make        String
   model       String
   year        Int
@@ -31,8 +33,12 @@ model Furniture {
   price       Float
   img         String
   material    String?
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+
+  userId    String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id])
 
   @@map("furnitures")
 }
